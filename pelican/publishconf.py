@@ -35,7 +35,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 10
 
-SITEURL = 'http://example.com'
+SITEURL = 'http://coursemdetw.github.io/reveal'
 RELATIVE_URLS = True
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -46,5 +46,12 @@ DELETE_OUTPUT_DIRECTORY = True
 # Following items are often useful when publishing
 
 #DISQUS_SITENAME = ""
-DISQUS_SITENAME = "2015Fall"
+DISQUS_SITENAME = "2015fall"
 #GOOGLE_ANALYTICS = ""
+
+# 必須絕對目錄或相對於設定檔案所在目錄
+PLUGIN_PATHS = ['./../plugin']
+PLUGINS = ['liquid_tags.notebook']
+# 目錄設定相對於 reveal 下的 content 目錄
+NOTEBOOK_DIR = 'notebook'
+
